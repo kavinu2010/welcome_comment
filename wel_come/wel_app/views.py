@@ -8,5 +8,5 @@ def home(request):
   return HttpResponse('welcome home')
 
 def comments(request):
-  comm=Comment.object.all()
+  comm=Comment.objects.all()
   return render(request,'comment.html',{'comm':comm})
