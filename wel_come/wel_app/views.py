@@ -4,8 +4,8 @@ from django.http import HttpResponse
 from .models import Comment
 
 # Create your views here.
-def home(request):
-  return HttpResponse('welcome home')
+# def home(request):
+#   return HttpResponse('welcome home')
 
 def comments(request):
   comm=Comment.objects.all()

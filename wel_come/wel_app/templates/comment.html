@@ -6,8 +6,12 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Welcome to comments area</h1>
     {% for comments in comm %}
     <p>{{comments.title}}</p>
+    <p>{{comments.comment}}</p>
+    <br />
+    <hr />
     {% endfor %}
   </body>
 </html>
